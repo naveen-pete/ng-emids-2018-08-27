@@ -1,0 +1,15 @@
+<h3>Products</h3>
+<p>This component displays the list of products</p>
+
+<p>Product Name: {{ productName }}</p>
+
+<p>
+  <input type="text" [(ngModel)]="productName" name="productName">
+</p>
+<p>
+  <button type="button" (click)="onSave($event)">Save</button>
+</p>
+
+<div>
+  Product Name: {{ productName }}
+</div>

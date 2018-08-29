@@ -1,4 +1,4 @@
-abstract class Animal { 
+class Animal { 
   // name: string;
   // private name: string;
   
@@ -6,7 +6,9 @@ abstract class Animal {
     // this.name = name;
   }
   
-  abstract speak();
+  speak() {
+    console.log('Animal speaks...');
+  };
 }
 
 class Dog extends Animal {
@@ -20,6 +22,7 @@ class Dog extends Animal {
   }
   
   speak() {
+    super.speak();
     console.log(this.name + ' barks.');
   }
 }
@@ -52,9 +55,9 @@ const d = new Dog('tomy', 'white');
 d.speak();
 d.showColor();
 
-const l = new Lion('leo');
-l.speak();
-l.showDetails();
+// const l = new Lion('leo');
+// l.speak();
+// l.showDetails();
 
-const k = new Cat('kitty');
-k.speak();
+// const k = new Cat('kitty');
+// k.speak();

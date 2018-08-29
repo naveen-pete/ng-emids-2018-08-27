@@ -1,10 +1,10 @@
 class Product {
-  name: string;
-  price: number;
+  // private name: string;
+  // price: number;
 
-  constructor(name: string, price: number = 10000) {
-    this.name = name;
-    this.price = price;
+  constructor(private name: string, public price: number = 10000) {
+    // this.name = name;
+    // this.price = price;
   }
 
   showDetails() {
@@ -14,8 +14,8 @@ class Product {
 }
 
 let p1: Product = new Product('Samsung Galaxy', 25000);
-// p1.name = 'Samsung Galaxy';
-// p1.price = 25000;
+// p1.name = 'Samsung Galaxy S9';
+// p1.price = 50000;
 
 p1.showDetails();
 
